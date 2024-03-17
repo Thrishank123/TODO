@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goal Guru</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="TODO.css">
+<script src="TODO.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-tasks mr-2"></i><span id="todo-heading">Goal Guru</span>
+      </a>
+    </div>
+  </nav>
+  <div class="container">
+    <button class="btn" onclick="showTodoInput()">
+      <i class="fas fa-plus"></i> Add
+    </button>
+    <div class="todo-input" id="todo-input">
+      <textarea id="todo-text" rows="4" cols="50" placeholder="Enter your TODO"></textarea>
+      <button class="btn" onclick="addTodo()">Add TODO</button>
+    </div>
+    <button class="btn" onclick="showTodoList()">
+      <i class="fas fa-list"></i> Show
+    </button>
+    <button class="btn" onclick="deleteTodoList()">
+      <i class="fas fa-trash-alt"></i> Delete Selected
+    </button>
+    <ul id="todo-list" class="todo-list"></ul>
+    <div class="quote">
+      <p>"The future depends on what you do today." - Mahatma Gandhi</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <div>
+      <p>&copy; 2024 TODO List App</p>
+    </div>
+  </footer>
+</body>
+</html>
